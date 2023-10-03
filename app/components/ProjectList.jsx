@@ -33,11 +33,11 @@ export default function ProjectList() {
             github="https://github.com/bquek00/Planner" tools={["HTML", "JavaScript", "CSS", "Python", "SQL", "SQLite", "Flask"]}
             />
             <ProjectCard image="/intrusion.png" name="Intrusion Detection for Automous Vehicles" 
-            desc="This project is designed to train and test machine learning models on CAN bus data for intrusion detection purposes."
+            desc="This project is designed to train and test machine learning models on CAN bus data for intrusion detection purposes"
             github="https://github.com/bquek00/CAN-Intrusion" tools={["Pandas", "scikit-learn", "TensorFlow", "Python", "Deep Learning"]}
             />
              <ProjectCard image="/vapt.png" name="VAPT Report for WordPress 4.7.2" 
-            desc="Conducted a rigorous vulnerability assessment of WordPress 4.7.2 using tools like Snyk and WPScan, employing CVSS 3.0 and STRIDE for risk and threat analysis and developed a proof-of-concept to demonstrate the potential impact of XSS attacks, highlighting the risks of unauthorized website modification and privilege escalation."
+            desc="Conducted a rigorous vulnerability assessment of WordPress 4.7.2 using tools like Snyk and WPScan, employing CVSS 3.0 and STRIDE for risk and threat analysis and developed a proof-of-concept to demonstrate the potential impact of XSS attacks, highlighting the risks of unauthorized website modification and privilege escalation"
             link="https://drive.google.com/file/d/12rMreZDnFQw8fMl3WKzxc6Ajsgrf6G0w/view?usp=sharing" tools={["Kali Linux", "WPScan", "OpenVAS", "Snyk", "WordPress"]}
             />
 
