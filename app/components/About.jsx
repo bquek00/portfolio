@@ -23,9 +23,9 @@ export default function About() {
             }} className='lg:w-3/6 flex flex-col gap-5 justify-center md:mb-5'>
           
                 <h1 className='text-4xl lg:text-6xl font-bold'>Bryan Quek</h1>
-                <h2 className='text-md lg:text-lg text-gray-200'>Hey there! I am I'm in my final year studying computer science at the University of Queensland, 
+                <h2 className='text-md lg:text-lg text-gray-200'>Hey there! I am I am in my final year studying computer science at the University of Queensland, 
                     and I have a deep interest in Full Stack Development and web application creation. 
-                    Feel free to explore my portfolio and reach out if you're interested.
+                    Feel free to explore my portfolio and reach out if you are interested.
                 </h2>
                 <ContactLink />
 
