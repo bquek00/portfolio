@@ -12,8 +12,8 @@ export default function ProjectCard({image, name, desc, github, live, tools, lin
              <Image
             className='responsive'
             src={image}
-            width={400}
-            height={400}
+            width={350}
+            height={350}
             alt="Picture of Page"
             />
             <div className='bg-black p-5'>

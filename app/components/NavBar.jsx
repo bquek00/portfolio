@@ -56,7 +56,7 @@ export default function NavBar({logout}) {
         <a href="/projects"  className="block py-2 pl-3 pr-4  rounded  hover:bg-white/[.1] rounded">Projects</a>
       </li>
       <li>
-        <Link href="contact" className="block py-2 pl-3 pr-4 rounded   hover:bg-white/[.1] rounded">Skills</Link>
+        <Link href="/skills" className="block py-2 pl-3 pr-4 rounded   hover:bg-white/[.1] rounded">Skills</Link>
       </li>
       <li>
         <Link href="contact" className="block py-2 pl-3 pr-4 rounded   hover:bg-white/[.1] rounded">Resume</Link>
