@@ -15,6 +15,12 @@ module.exports = {
       margin: {
         basic: '25%',
       },
+      padding: {
+        basic: '100px',
+      },
+      width: {
+        card: '400px'
+      },
     },
   },
   plugins: [],

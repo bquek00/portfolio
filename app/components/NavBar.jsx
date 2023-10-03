@@ -50,10 +50,10 @@ export default function NavBar({logout}) {
   items-center justify-between w-full " id="navbar-sticky`}>
     <ul className="flex flex-col font-medium  bg-neutral-800">
       <li>
-        <Link href="/demo" className="block py-2 pl-3 pr-4 hover:bg-white/[.1] rounded " aria-current="page">Home</Link>
+        <Link href="/" className="block py-2 pl-3 pr-4 hover:bg-white/[.1] rounded " aria-current="page">Home</Link>
       </li>
       <li>
-        <a href={logout ? "/" : "/login"}  className="block py-2 pl-3 pr-4  rounded  hover:bg-white/[.1] rounded">Projects</a>
+        <a href="/projects"  className="block py-2 pl-3 pr-4  rounded  hover:bg-white/[.1] rounded">Projects</a>
       </li>
       <li>
         <Link href="contact" className="block py-2 pl-3 pr-4 rounded   hover:bg-white/[.1] rounded">Skills</Link>
