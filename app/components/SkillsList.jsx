@@ -8,7 +8,7 @@ export default function SkillList({children}) {
    
 
     return (
-        <div className='flex gap-2 justify-center items-center w-full flex-wrap'>
+        <div className='flex gap-2 justify-center items-center w-full px-5 mb-5 flex-wrap'>
             {children}
         </div>
 
