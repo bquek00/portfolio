@@ -14,6 +14,7 @@ export default function ProjectCard({image, name, desc, github, live, tools, lin
             src={image}
             width={350}
             height={350}
+            priority={true}
             alt="Picture of Page"
             />
             <div className='bg-black p-5'>

@@ -14,6 +14,7 @@ export default function SkillsCard({img, name}) {
             width={50}
             height={50}
             alt="icon"
+            priority={true}
             />
             <p className='text-center'>{name}</p>
         </div>
