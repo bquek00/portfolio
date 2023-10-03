@@ -22,23 +22,23 @@ export default function ProjectCard({image, name, desc, github, live, tools, lin
                 <div className='flex items-center justify-center'>
                 {github && (
                         <div className='mr-3'>
-                            <Link href={github} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" >
+                            <a href={github} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" target="_blank" rel="noopener noreferrer">
                                 Github
-                            </Link>
+                            </a>
                         </div>
                     )}
                 {live && (
                         <div className='mr-3'>
-                            <Link href={live} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" >
+                            <a href={live} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" target="_blank" rel="noopener noreferrer">
                                 Live
-                            </Link>
+                            </a>
                         </div>
                     )}
                 {link && (
                         <div className='mr-3'>
-                            <Link href={link} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" >
+                            <a href={link} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" target="_blank" rel="noopener noreferrer">
                                 Report
-                            </Link>
+                            </a>
                         </div>
                     )}
                 </div>

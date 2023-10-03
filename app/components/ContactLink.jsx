@@ -5,7 +5,7 @@ export default function ContactLink() {
 
     return (
        <div className='flex mt-4'>
-            <Link href="mailto:bryanquek87@gmail.com">
+            <a href="mailto:bryanquek87@gmail.com" target="_blank" rel="noopener noreferrer">
             <Image
                     src="/email.png"
                     width={50}
@@ -13,9 +13,9 @@ export default function ContactLink() {
                     alt="email"
                     className='mr-2'
                 />
-            </Link>
+            </a>
             
-            <Link href="https://github.com/bquek00">
+            <a href="https://github.com/bquek00" target="_blank" rel="noopener noreferrer">
             <Image
                 src="/github.png"
                 width={50}
@@ -23,16 +23,16 @@ export default function ContactLink() {
                 alt="github"
                 className='mr-2'
             />
-            </Link>
+            </a>
 
-            <Link href="https://www.linkedin.com/in/bryan-quek-3099a4245">
+            <a href="https://www.linkedin.com/in/bryan-quek-3099a4245" target="_blank" rel="noopener noreferrer">
             <Image
                 src="/linkedin.png"
                 width={50}
                 height={50}
                 alt="linkedin"
             />
-            </Link>
+            </a>
 
        </div>
     )
