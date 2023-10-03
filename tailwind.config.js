@@ -19,7 +19,7 @@ module.exports = {
         basic: '100px',
       },
       width: {
-        card: '400px'
+        card: '350px',
       },
     },
   },

@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 
-export default function ProjectCard({image, name, desc, github, live, tools}) {
+export default function ProjectCard({image, name, desc, github, live, tools, link}) {
    
 
     return (
         <div className='w-card border-2 rounded-lg overflow-hidden'>
              <Image
-            className=''
+            className='responsive'
             src={image}
             width={400}
             height={400}
@@ -31,6 +31,13 @@ export default function ProjectCard({image, name, desc, github, live, tools}) {
                         <div className='mr-3'>
                             <Link href={live} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" >
                                 Live
+                            </Link>
+                        </div>
+                    )}
+                {link && (
+                        <div className='mr-3'>
+                            <Link href={link} className="p-2 border-2 rounded-lg hover:bg-white hover:text-black" >
+                                Report
                             </Link>
                         </div>
                     )}

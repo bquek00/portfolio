@@ -16,3 +16,11 @@
   }
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+  grid-gap: 16px;
+  justify-content: center;
+  align-items: start;
+}
+
