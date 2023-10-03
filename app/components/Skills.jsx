@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import SkillsCard from './SkillsCard';
 import SkillList from './SkillsList';
+import { motion } from 'framer-motion';
 
 export default function Skills() {
    
@@ -11,9 +12,23 @@ export default function Skills() {
     return (
         <div>
             <div className='text-white pt-basic'>
-                <h1 className='text-white text-6xl font-bold text-center mb-10 mx-5'>Skills</h1>
+                <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {scale: .8,
+                        opacity: 0},
+                visible: {scale: 1,
+                        opacity: 1,
+                        transition: {
+                        delay: .3}},
+            }} className='text-white text-6xl font-bold text-center mb-10 mx-5'>Skills</motion.div>
 
-                <div className='flex flex-col items-center'>
+                <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {scale: .8,
+                        opacity: 0},
+                visible: {scale: 1,
+                        opacity: 1,
+                        transition: {
+                        delay: .4}},
+            }}  className='flex flex-col items-center'>
                 <h2 className='text-2xl font-bold my-2'>Full Stack</h2> 
                 <SkillList>
                     <SkillsCard img="/react.png" name="React" />
@@ -47,7 +62,7 @@ export default function Skills() {
                     <SkillsCard img="/c.png" name="C" />
                     <SkillsCard img="/java.png" name="Java" />
                 </SkillList>
-                </div>
+                </motion.div>
      
             </div>
             

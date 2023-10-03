@@ -1,4 +1,5 @@
 "use client";
+import { motion } from 'framer-motion';
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 
@@ -14,7 +15,14 @@ export default function NavBar({logout}) {
 
     return (
        
-<nav className="fixed z-20 top-0 left-0 text-white w-full">
+<motion.div initial="hidden" animate="visible" variants={{
+                hidden: {scale: .8,
+                        opacity: 0},
+                visible: {scale: 1,
+                        opacity: 1,
+                        transition: {
+                        delay: .2}},
+            }} className="fixed z-20 top-0 left-0 text-white w-full">
 
   <div className="w-full flex flex-wrap items-center justify-between mx-auto py-4 pt-0">
   
@@ -61,15 +69,11 @@ export default function NavBar({logout}) {
       <li>
         <Link href="contact" className="block py-2 pl-3 pr-4 rounded   hover:bg-white/[.1] rounded">Resume</Link>
       </li>
-      <li>
-        <Link href="contact" className="block py-2 pl-3 pr-4 rounded   hover:bg-white/[.1] rounded">Theme</Link>
-      </li>
-
 
     </ul>
   </div>
   </div>
-</nav>
+</motion.div>
 
 
     )

@@ -3,25 +3,34 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import ProjectCard from './ProjectCard';
+import { motion } from 'framer-motion';
+
 
 
 export default function ProjectList() {
    
 
     return (
-        <div className='text-white gridContainer pb-5'>
+        <motion.div initial="hidden" animate="visible" variants={{
+            hidden: {scale: .8,
+                    opacity: 0},
+            visible: {scale: 1,
+                    opacity: 1,
+                    transition: {
+                    delay: .4}},
+        }} className='text-white gridContainer pb-5'>
             <ProjectCard image="/Edexia.png" name="Edexia - Automated Marking" 
-            desc="Developed a forward-thinking application using Next.js, focused on reducing manual grading efforts by automating the evaluation of assignments using the OpenAI API"
-            live="https://edexia.vercel.app/" tools={["React", "Next.js", "Supabase", "PostgreSQL","TypeScript", "Vercel"]}
+            desc="Developed a forward-thinking application using Next.js, focused on reducing manual grading efforts by automating the evaluation of assignments using a Large Language Learning Model"
+            live="https://edexia.vercel.app/" github="https://github.com/bquek00/Edexia" tools={["React", "Next.js", "Supabase", "PostgreSQL","TypeScript", "Vercel"]}
             />
             <ProjectCard image="/Japanese.png" name="Japanese Learning and Quiz App" 
             desc="Developed a multifunctional Next.js application, utilizing Supabase and PostgreSQL, that enables users to search Japanese words, compile notes, and self-quiz to enhance language learning and retention"
             live="https://learn-japanese-nine.vercel.app/" github="https://github.com/bquek00/learnJapanese" tools={["React", "Next.js", "Supabase", "PostgreSQL","TypeScript", "Vercel"]}
             />
             <ProjectCard image="/planner.png" name="CS50 Final Project - Dynamic web application" 
-            desc="Dynamic web application, using JavaScript, Flask Python, and SQL, to create and share plans with friends and family. 
-            Flask Python framework to set up a web server to  receive and respond to requests. "
-            github="https://github.com/bquek00/Planner" tools={["HTML", "JavaScript", "CSS", "Python", "SQLSQLite", "Flask"]}
+            desc="Dynamic web application, using JavaScript, Python, and SQL, to create and share plans with friends and family and uses
+            a Flask Python framework to set up a web server to  receive and respond to requests. "
+            github="https://github.com/bquek00/Planner" tools={["HTML", "JavaScript", "CSS", "Python", "SQL", "SQLite", "Flask"]}
             />
             <ProjectCard image="/intrusion.png" name="Intrusion Detection for Automous Vehicles" 
             desc="This project is designed to train and test machine learning models on CAN bus data for intrusion detection purposes."
@@ -37,7 +46,7 @@ export default function ProjectList() {
             link="https://drive.google.com/file/d/1XStYn5DmB-zz0fn0ouBYCD1mUCk1s8Hd/view?usp=sharing" tools={["Pandas", "scikit-learn", "TensorFlow", "Python", "Deep Learning"]}
             />
             
-        </div>
+        </motion.div>
 
     )
 }
