@@ -19,9 +19,9 @@ export default function ProjectList() {
                     transition: {
                     delay: .4}},
         }} className='text-white gridContainer pb-5'>
-            <ProjectCard image="/Edexia.png" name="Edexia - Automated Marking" 
+            <ProjectCard image="/Edexia.png" name="Grade Pilot - Automated Marking" 
             desc="Developed a forward-thinking application using Next.js, focused on reducing manual grading efforts by automating the evaluation of assignments using a Large Language Learning Model"
-            live="https://edexia.vercel.app/" github="https://github.com/bquek00/Edexia" tools={["React", "Next.js", "Supabase", "PostgreSQL","TypeScript", "Vercel"]}
+            live="https://gradepilotai.vercel.app/" github="https://github.com/bquek00/GradePilotAI" tools={["React", "Next.js", "Supabase", "PostgreSQL","TypeScript", "Vercel"]}
             />
             <ProjectCard image="/Japanese.png" name="Japanese Learning and Quiz App" 
             desc="Developed a multifunctional Next.js application, utilizing Supabase and PostgreSQL, that enables users to search Japanese words, compile notes, and self-quiz to enhance language learning and retention"
